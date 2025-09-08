@@ -38,3 +38,27 @@ header {
   border: none;
   font-size: 1.2rem;
 }
+
+
+/* Mobile-first accessibility improvements */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body {
+  font-size: 1rem; /* Scales with system text settings */
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+#darkModeToggle {
+  padding: 0.5rem 0.75rem; /* Larger touch target for accessibility */
+  font-size: 1.25rem;
+}
