@@ -96,7 +96,8 @@
 
         // Bug: Trying to access undefined property
         const userProfile = null;
-        const displayName = userProfile.name.toUpperCase(); // This will throw TypeError
+        const displayName = userProfile?.name?.toUpperCase() || "Guest";
+        console.log("User display name:", displayName);
         console.log('User display name:', displayName);
     </script>
 </body>
