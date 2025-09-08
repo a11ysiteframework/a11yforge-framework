@@ -1,64 +1,74 @@
-/* A11yForge Framework Styles with Dark Mode */
-
-:root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --link-color: #007acc;
-}
-
+/* Base layout */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-a {
-  color: var(--link-color);
-}
-
-body.dark-mode {
-  --bg-color: #121212;
-  --text-color: #f5f5f5;
-  --link-color: #4dabf7;
+  line-height: 1.6;
+  background-color: var(--bg-color, #fff);
+  color: var(--text-color, #000);
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: var(--header-bg, #333);
+  color: var(--header-text, #fff);
   padding: 1rem;
-}
-
-#darkModeToggle {
-  cursor: pointer;
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-}
-
-
-/* Mobile-first accessibility improvements */
-
-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-body {
-  font-size: 1rem; /* Scales with system text settings */
-  line-height: 1.5;
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
-h1, h2, h3 {
-  line-height: 1.2;
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
-#darkModeToggle {
-  padding: 0.5rem 0.75rem; /* Larger touch target for accessibility */
-  font-size: 1.25rem;
+nav a {
+  text-decoration: none;
+  color: var(--header-text, #fff);
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  padding: 1.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--header-bg, #333);
+  color: var(--header-text, #fff);
+  margin-top: 2rem;
+}
+
+/* Buttons (including dark mode toggle) */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
+/* Dark mode variables */
+body.dark {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --header-bg: #222;
+  --header-text: #f1f1f1;
 }

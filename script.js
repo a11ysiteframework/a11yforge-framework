@@ -1,17 +1,14 @@
-// A11yForge Framework Dark Mode Toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('darkModeToggle');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const saved = localStorage.getItem('dark-mode');
 
-const toggle = document.getElementById("darkModeToggle");
-const body = document.body;
+  if (saved === 'true' || (saved === null && prefersDark)) {
+    document.body.classList.add('dark');
+  }
 
-// Apply saved theme
-if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-mode");
-  toggle.textContent = "☀️";
-}
-
-toggle.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
-  const theme = body.classList.contains("dark-mode") ? "dark" : "light";
-  localStorage.setItem("theme", theme);
-  toggle.textContent = theme === "dark" ? "☀️" : "🌙";
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('dark-mode', document.body.classList.contains('dark'));
+  });
 });
