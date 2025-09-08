@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans leading-relaxed m-0 p-5 bg-gray-100">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <nav class="mb-6">
+            <div class="flex justify-center space-x-6">
+                <a href="index.html" class="text-blue-600 hover:text-blue-800 font-medium">Home</a>
+                <a href="about.html" class="text-gray-800 font-medium border-b-2 border-blue-600">About</a>
+            </div>
+        </nav>
+
+        <h1 class="text-gray-800 text-center text-3xl font-bold mb-6">About Our Company</h1>
+
+        <div class="my-5">
+            <h2 class="text-gray-600 border-b-2 border-gray-300 pb-2 text-xl font-semibold mb-4">Meet Our Founder</h2>
+
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-6 mb-6">
+                <div class="w-48 h-48 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center text-white text-6xl font-bold">
+                    AJ
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Alexandra Johnson</h3>
+                    <p class="text-blue-600 font-semibold mb-4">Founder & CEO</p>
+                    <p class="text-gray-600 mb-4">
+                        Alexandra Johnson founded this company in 2018 with a vision to create innovative web solutions that bridge the gap between technology and human experience. With over 15 years of experience in software development and user experience design, she has led numerous successful projects for Fortune 500 companies and emerging startups alike.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        Born and raised in Portland, Oregon, Alexandra discovered her passion for coding at the age of 12 when she built her first website for her school's science fair. She went on to earn her Computer Science degree from Stanford University, where she graduated summa cum laude and was recognized for her groundbreaking research in human-computer interaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5">
+            <h2 class="text-gray-600 border-b-2 border-gray-300 pb-2 text-xl font-semibold mb-4">Professional Journey</h2>
+            <div class="space-y-4">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Early Career (2009-2014)</h4>
+                    <p class="text-gray-600">
+                        Started as a junior developer at TechFlow Solutions, where she quickly rose through the ranks and led the development of their award-winning customer portal platform.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Senior Leadership (2014-2018)</h4>
+                    <p class="text-gray-600">
+                        Served as Head of Product Development at InnovateTech, where she spearheaded the creation of three major SaaS products that generated over $10M in revenue.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-2">Entrepreneurship (2018-Present)</h4>
+                    <p class="text-gray-600">
+                        Founded her own company to focus on creating user-centric web applications that solve real-world problems with elegant, accessible design.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5">
+            <h2 class="text-gray-600 border-b-2 border-gray-300 pb-2 text-xl font-semibold mb-4">Personal Interests</h2>
+            <p class="text-gray-600 mb-4">
+                When she's not coding or mentoring young developers, Alexandra enjoys hiking in the Pacific Northwest, practicing yoga, and experimenting with new recipes in her kitchen. She's also an avid photographer and has had her landscape photography featured in several local galleries.
+            </p>
+            <p class="text-gray-600 mb-4">
+                Alexandra is passionate about giving back to the community and regularly volunteers at local coding bootcamps, teaching web development to underrepresented groups in tech. She believes that technology should be accessible to everyone and works tirelessly to promote diversity and inclusion in the industry.
+            </p>
+        </div>
+
+        <div class="my-5">
+            <h2 class="text-gray-600 border-b-2 border-gray-300 pb-2 text-xl font-semibold mb-4">Awards & Recognition</h2>
+            <ul class="text-gray-600 mb-4 list-disc pl-6 space-y-2">
+                <li>"Tech Innovator of the Year" - Portland Business Journal (2022)</li>
+                <li>"40 Under 40" - Oregon Technology Association (2021)</li>
+                <li>"Outstanding Alumni Award" - Stanford University Computer Science Department (2020)</li>
+                <li>"Women in Tech Leadership Award" - Pacific Northwest Tech Council (2019)</li>
+            </ul>
+        </div>
+
+        <div class="bg-gray-50 p-4 rounded">
+            <h2 class="text-gray-600 border-b-2 border-gray-300 pb-2 text-xl font-semibold mb-4">Connect with Alexandra</h2>
+            <p class="text-gray-600 mb-4"><strong>LinkedIn:</strong> linkedin.com/in/alexandra-johnson-tech</p>
+            <p class="text-gray-600 mb-4"><strong>Twitter:</strong> @AlexJohnsonTech</p>
+            <p class="text-gray-600 mb-4"><strong>Email:</strong> alexandra@example.com</p>
+            <p class="text-gray-600 mb-4"><strong>Page Last Updated:</strong> <span id="date"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Display current date
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+
+        // Bug: Trying to access undefined property
+        const userProfile = null;
+        const displayName = userProfile.name.toUpperCase(); // This will throw TypeError
+        console.log('User display name:', displayName);
+    </script>
+</body>
+</html>

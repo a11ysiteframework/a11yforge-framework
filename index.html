@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans leading-relaxed m-0 p-5 bg-gray-100">
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+        <nav class="mb-6">
+            <div class="flex justify-center space-x-6">
+                <a href="index.html" class="text-gray-800 font-medium border-b-2 border-blue-600">Home</a>
+                <a href="about.html" class="text-blue-600 hover:text-blue-800 font-medium">About</a>
+            </div>
+        </nav>
+
+        <h1 class="text-gray-800 text-center text-3xl font-bold mb-6">Welcome to My Website</h1>
+
+        <div class="my-5">
+            <h2 class="text-gray-600 border-b-2 border-gray-300 pb-2 text-xl font-semibold mb-4">About</h2>
+            <p class="text-gray-600 mb-4">This is a basic HTML page with some essential information. It demonstrates a clean, simple layout with modern styling.</p>
+            <p class="text-gray-600 mb-4">This page includes basic HTML5 structure, CSS styling, and responsive design principles.</p>
+        </div>
+
+        <div class="my-5">
+            <h2 class="text-gray-600 border-b-2 border-gray-300 pb-2 text-xl font-semibold mb-4">Features</h2>
+            <ul class="text-gray-600 mb-4 list-disc pl-6">
+                <li>Clean, modern design</li>
+                <li>Responsive layout</li>
+                <li>Cross-browser compatible</li>
+                <li>Easy to customize</li>
+            </ul>
+        </div>
+
+        <div class="my-5">
+            <h2 class="text-gray-600 border-b-2 border-gray-300 pb-2 text-xl font-semibold mb-4">Technical Details</h2>
+            <p class="text-gray-600 mb-4"><strong>HTML Version:</strong> HTML5</p>
+            <p class="text-gray-600 mb-4"><strong>CSS:</strong> Tailwind CSS</p>
+            <p class="text-gray-600 mb-4"><strong>Viewport:</strong> Mobile-friendly responsive design</p>
+            <p class="text-gray-600 mb-4"><strong>Character Encoding:</strong> UTF-8</p>
+        </div>
+
+        <div class="bg-gray-50 p-4 rounded">
+            <h2 class="text-gray-600 border-b-2 border-gray-300 pb-2 text-xl font-semibold mb-4">Contact Information</h2>
+            <p class="text-gray-600 mb-4"><strong>Website:</strong> example.com</p>
+            <p class="text-gray-600 mb-4"><strong>Email:</strong> contact@example.com</p>
+            <p class="text-gray-600 mb-4"><strong>Last Updated:</strong> <span id="date"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Display current date
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

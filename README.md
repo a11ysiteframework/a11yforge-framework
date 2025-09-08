@@ -1,2 +1,2 @@
-# a11yforge-framework
-“A lightweight web framework built with accessibility (a11y) in mind.”
+# A11yForge Framework
+A basic HTML website project with index.html
