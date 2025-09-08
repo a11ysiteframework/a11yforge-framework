@@ -1,54 +1,57 @@
-![A11yForge Framework Logo](a11yforge-logo.png)
-
 # A11yForge Framework
 
-**A11yForge Framework** is a lightweight, accessibility-first web framework designed to help developers build inclusive and user-friendly websites with ease.  
+An accessible, **mobile-first starter framework** for building websites that meet modern web accessibility standards.  
+A11yForge is not a heavy framework — it’s a **starting point** to help you launch your own accessible, branded site quickly.
 
 ---
 
 ## ✨ Features
-
-- ♿ **Accessibility-first** — built with web accessibility (a11y) standards in mind  
-- ⚡ **Lightweight & fast** — minimal setup, quick to start  
-- 🎨 **Customizable** — easy to adapt styling and components  
-- 🌐 **Cross-browser support** — works seamlessly across modern browsers  
-- 📦 **Modular** — flexible structure for adding features as needed  
-
----
-
-## 🚀 Getting Started
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/a11yforge-framework.git
-cd a11yforge-framework
-```
-
-Open `index.html` in your browser to view the demo.  
+- 📱 **Mobile-first layout** with clean, minimal design  
+- 🌙 **Dark mode** with saved preference (`localStorage`)  
+- ♿ **Floating Accessibility Menu** (top-right):  
+  - Toggle dark/light mode  
+  - Increase/decrease font size  
+- 🔗 **Consistent navigation & footer** across all pages  
+- 📨 **Contact form template** (with customizable `mailto:`)  
+- 📄 **Footer pages** for common site needs (Accessibility, Terms, Privacy)  
+- 🔍 **SEO placeholders** ready for customization (titles, descriptions, meta tags)  
 
 ---
 
-## 📚 Usage
+## 📄 Pages Included
+- `index.html` – Homepage  
+- `about.html` – About the framework  
+- `contact.html` – Accessible contact form  
+- `accessibility.html` – Accessibility statement placeholder  
+- `tos.html` – Terms of Service placeholder  
+- `privacy.html` – Privacy Policy placeholder  
+- `docs.html` – Developer documentation (kept separate, not in main nav)  
 
-- Use the included HTML/CSS as a base for your accessible web project  
-- Customize styles in `styles.css`  
-- Extend functionality with your own JavaScript  
+---
+
+## 🚀 Usage
+1. **Download or clone** this repository  
+   ```bash
+   git clone https://github.com/yourusername/a11yforge-framework.git
+   ```
+
+2. **Open `index.html`** in your browser to view the starter site.
+
+3. **Customize the site for your needs**:  
+   - Update site branding (titles, meta tags, footer text).  
+   - Edit the `mailto:` in `contact.html` to your preferred address.  
+   - Replace placeholder content in `tos.html`, `privacy.html`, and `accessibility.html`.  
+
+4. **Deploy** to your hosting service (GitHub Pages, Netlify, Vercel, etc.).  
 
 ---
 
 ## 🤝 Contributing
-
 Contributions are welcome!  
-If you’d like to improve A11yForge Framework, please fork the repo and open a pull request.  
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ---
 
 ## 📜 License
-
-This project is licensed under the MIT License.  
-See the [LICENSE](LICENSE) file for details.  
-
----
-
-> Built with ❤️ to make the web accessible for everyone.  
+This project is provided under the **MIT License**.  
+You are free to modify and use it for your own projects.

@@ -1,45 +1,16 @@
 # Contributing to A11yForge Framework
 
-Thank you for your interest in contributing to **A11yForge Framework**! 🎉  
-We welcome all contributions that help make the web more accessible for everyone.
+We welcome contributions that improve accessibility and usability!
 
-## 🚀 How to Contribute
+## How to Contribute
+1. Fork this repository and create your branch from `main`.
+2. Make your changes with clear, accessible code and comments.
+3. Test your changes across multiple devices and screen sizes.
+4. Submit a pull request with a clear explanation of your changes.
 
-1. **Fork the repository**  
-   Create your own copy of the repo on GitHub.
+## Code Style
+- Keep HTML semantic and accessible.
+- Use mobile-first CSS practices.
+- Ensure JavaScript supports keyboard navigation and screen readers.
 
-2. **Create a feature branch**  
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. **Make your changes**  
-   - Ensure code follows accessibility-first principles.  
-   - Write clear, concise commit messages.  
-
-4. **Test your changes**  
-   Make sure everything works as expected before submitting.
-
-5. **Open a pull request (PR)**  
-   - Provide a clear description of what you changed and why.  
-   - Reference any related issues.  
-
----
-
-## 📝 Guidelines
-
-- Keep accessibility (a11y) at the center of your changes.  
-- Use semantic HTML whenever possible.  
-- Follow existing coding style and conventions.  
-- Be respectful and collaborative.  
-
----
-
-## 💡 Need Help?
-
-If you’re unsure about something, feel free to open an issue or start a discussion.  
-We’d love to hear your ideas and help you get started.  
-
----
-
-Thanks for helping us forge a more accessible web! ❤️  
+Thank you for helping improve A11yForge Framework!
