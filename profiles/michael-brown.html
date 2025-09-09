@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Michael Brown - Profile</title>
+  <link rel="stylesheet" href="../styles.css"/>
+  <script defer src="../script.js"></script>
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <div class="profile-info">
+        <img src="../images/headshots/avatar4.jpg" alt="Profile Photo of Michael Brown" class="profile-photo" data-fallback="../images/fallback-avatar.svg"/>
+        <div>
+          <h1>Michael Brown</h1>
+          <p class="profile-title">DevOps Engineer</p>
+        </div>
+      </div>
+      <div class="profile-toolbar">
+        <button onclick="window.print()">🖨 Print Resume</button>
+        <button onclick="copyLink()">🔗 Copy Share Link</button>
+      </div>
+    </div>
+
+    <div class="profile-grid">
+      <aside class="profile-sidebar">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>Email: michael-brown@example.com</p>
+          <p>Phone: (555) 123-4567</p>
+          <p>Location: Anytown, USA</p>
+        </div>
+        <div class="skills">
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>Accessibility (WCAG)</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>UI/UX Collaboration</li>
+            <li>Performance</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="profile-main">
+        <section class="profile-section">
+          <h2>Profile</h2>
+          <p>Michael Brown is a dedicated professional focused on accessible, performant web experiences. They collaborate cross-functionally and continuously improve products through research-driven iteration.</p>
+        </section>
+
+        <section class="profile-section">
+          <h2>Employment History</h2>
+          <h3>Senior DevOps Engineer · TechCorp</h3>
+          <p>2019 – Present</p>
+          <p>Led initiatives to improve accessibility and performance; mentored junior teammates; shipped features used by thousands.</p>
+
+          <h3>DevOps Engineer · WebSolutions</h3>
+          <p>2015 – 2019</p>
+          <p>Delivered responsive, accessible web apps for a range of clients; collaborated with designers and QA.</p>
+        </section>
+
+        <section class="profile-section">
+          <h2>Education</h2>
+          <p>B.S. in Computer Science · University of Somewhere (2011 – 2015)</p>
+        </section>
+
+        <section class="profile-section">
+          <h2>References</h2>
+          <p>Available upon request.</p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div id="copy-toast" class="copy-toast">Link copied to clipboard!</div>
+</body>
+</html>
